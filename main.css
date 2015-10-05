@@ -278,7 +278,7 @@ footer{
 }
 
 .flex-container {
-  flex-wrap: wrap;
+ 
   padding: 0;
   margin: 0;
   list-style: none;
@@ -291,6 +291,7 @@ footer{
   
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .port {
   padding: 10px;
@@ -431,4 +432,7 @@ h6 {
 }
 .carousel-inner{
   width:100% !important;
+}
+.modal-open .modal .btn:focus{
+  outline:none;
 }
