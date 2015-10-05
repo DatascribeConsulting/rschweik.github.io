@@ -85,135 +85,135 @@ $(function() {
   </div>
     <div id="APortfolio">
       <h3> Portfolio </h3>
-      <ul class="flex-container">
+      <div class="flex-container">
 
 <!--- START Recent WORK MODAL -->
-        <li> <a data-toggle="modal" href="#RecentWork" class="btn btn-primary btn-lg">
+        <a data-toggle="modal" href="#RecentWork" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Recent Work</figcaption>
             <img src="pics/portfolio/recentWork/recentIcon.png" alt="Pronghorn Map" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="RecentWork" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Recent Work</figcaption>
-            </div>
-            <div class="modal-body">
-                <div id="carousel-RecentWork" class="carousel slide">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-RecentWork" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-RecentWork" data-slide-to="1"></li>
-                        <li data-target="#carousel-RecentWork" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <a><img src="pics/portfolio/recentWork/PronghornBeforeAndAfter.png" alt="Meteorologist Portal Design" /></a>
-                                 <h3>Pronghorn Range, before and after redesign</h3>
-                                <p style="text-align:center">Made for FixWikiMaps as part of Maplift. Learned a lot about texturing maps - used Manually Shaded Relief from Natual Earth and bathymetry from Clean Topo 2. Also added shadows and highlights around certain layers.</p>
-                        </div>
-                        <div class="item">
-                            <a><img src="pics/portfolio/recentWork/letterMapFramed.png" alt="Letter Map Framed" /></a>
-                                 <h3>Antique Letter Map of the US</h3>
-                                <p style="text-align:center">For fun.</p>
-                        </div>
-                        <div class="item">
-                            <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" /></a>
-                                 <h3>Personal Website - You're Here!</h3>
-                                <p style="text-align:center">Mockup in Inkscape, bootstrap as framework, custom HTML and CSS</p>
-                        </div>
-                    </div>
-                    <!-- Controls --> 
-                    <a class="left carousel-control" href="#carousel-RecentWork" data-slide="prev">
-                      <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-RecentWork" data-slide="next">
-                       <span class="icon-next"></span>
-                    </a>
+          </figure></a>
+                <div class="modal fade" id="RecentWork" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                 <h4 class="modal-title">Recent Work</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carousel-RecentWork" class="carousel slide">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-RecentWork" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-RecentWork" data-slide-to="1"></li>
+                                        <li data-target="#carousel-RecentWork" data-slide-to="2"></li>
+                                    </ol>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <a><img src="pics/portfolio/recentWork/PronghornBeforeAndAfter.png" alt="Meteorologist Portal Design" /></a>
+                                                 <h3>Pronghorn Range, before and after redesign</h3>
+                                                <p style="text-align:center">Made for FixWikiMaps as part of Maplift. Learned a lot about texturing maps - used Manually Shaded Relief from Natual Earth and bathymetry from Clean Topo 2. Also added shadows and highlights around certain layers.</p>
+                                        </div>
+                                        <div class="item">
+                                            <a><img src="pics/portfolio/recentWork/letterMapFramed.png" alt="Letter Map Framed" /></a>
+                                                 <h3>Antique Letter Map of the US</h3>
+                                                <p style="text-align:center">For fun.</p>
+                                        </div>
+                                        <div class="item">
+                                            <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" /></a>
+                                                 <h3>Personal Website - You're Here!</h3>
+                                                <p style="text-align:center">Mockup in Inkscape, bootstrap as framework, custom HTML and CSS</p>
+                                        </div>
+                                    </div>
+                                    <!-- Controls --> 
+                                    <a class="left carousel-control" href="#carousel-RecentWork" data-slide="prev">
+                                      <span class="icon-prev"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-RecentWork" data-slide="next">
+                                       <span class="icon-next"></span>
+                                    </a>
 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
                 </div>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-<!--- END MOCKUP DESIGNS MODAL -->
+                <!--- END MOCKUP DESIGNS MODAL -->
 
 
 
 <!--- START MOCKUP DESIGNS MODAL -->
-        <li> <a data-toggle="modal" href="#Designs" class="btn btn-primary btn-lg">
+        <a data-toggle="modal" href="#Designs" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Design Mockups</figcaption>
             <img src="pics/portfolio/designs/mockupIcon.png" alt="Design Mockups" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="Designs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Design Mockups</figcaption>
-            </div>
-            <div class="modal-body">
-                <div id="carousel-Designs" class="carousel slide">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-Designs" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-Designs" data-slide-to="1"></li>
-                        <li data-target="#carousel-Designs" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <a><img src="pics/portfolio/designs/metPortal.png" alt="Meteorologist Portal Design" /></a>
-                                 <h3>Meteorologist Portal Design</h3>
-                                <p style="text-align:center">Made in UXPin for Understory.</p>
-                        </div>
-                        <div class="item">
-                            <a><img src="pics/portfolio/designs/googleMapsApi.png" alt="Google Maps API" /></a>
-                                 <h3>Google Maps API Style</h3>
-                                <p style="text-align:center">Simplified Google Maps baselayer so weather data could be overlayed nicely.</p>
-                        </div>
-                        <div class="item">
-                            <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" /></a>
-                                 <h3>Personal Website - You're Here!</h3>
-                                <p style="text-align:center">Mockup in Inkscape, bootstrap as framework, custom HTML and CSS</p>
-                        </div>
-                    </div>
-                    <!-- Controls --> 
-                    <a class="left carousel-control" href="#carousel-Designs" data-slide="prev">
-                      <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-Designs" data-slide="next">
-                       <span class="icon-next"></span>
-                    </a>
+          </figure></a>
+        <div class="modal fade" id="Designs" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                           <h4 class="modal-title">Design Mockups</h4>
+                      </div>
+                      <div class="modal-body">
+                          <div id="carousel-Designs" class="carousel slide">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                  <li data-target="#carousel-Designs" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carousel-Designs" data-slide-to="1"></li>
+                                  <li data-target="#carousel-Designs" data-slide-to="2"></li>
+                              </ol>
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                  <div class="item active">
+                                      <a><img src="pics/portfolio/designs/metPortal.png" alt="Meteorologist Portal Design" /></a>
+                                           <h3>Meteorologist Portal Design</h3>
+                                          <p style="text-align:center">Made in UXPin for Understory.</p>
+                                  </div>
+                                  <div class="item">
+                                      <a><img src="pics/portfolio/designs/googleMapsApi.png" alt="Google Maps API" /></a>
+                                           <h3>Google Maps API Style</h3>
+                                          <p style="text-align:center">Simplified Google Maps baselayer so weather data could be overlayed nicely.</p>
+                                  </div>
+                                  <div class="item">
+                                      <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" /></a>
+                                           <h3>Personal Website - You're Here!</h3>
+                                          <p style="text-align:center">Mockup in Inkscape, bootstrap as framework, custom HTML and CSS</p>
+                                  </div>
+                              </div>
+                              <!-- Controls --> 
+                              <a class="left carousel-control" href="#carousel-Designs" data-slide="prev">
+                                <span class="icon-prev"></span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel-Designs" data-slide="next">
+                                 <span class="icon-next"></span>
+                              </a>
 
-                </div>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-<!--- END MOCKUP DESIGNS MODAL -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+          </div>
+          <!--- END MOCKUP DESIGNS MODAL -->
 
 
 <!--- START WEATHER MODAL -->
-        <li> <a data-toggle="modal" href="#Weather" class="btn btn-primary btn-lg">
+        <a data-toggle="modal" href="#Weather" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Weather Phenomena</figcaption>
             <img src="pics/portfolio/weather/weatherIcon.png" alt="Weather" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="Weather" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          </figure></a>
+        <div class="modal fade" id="Weather" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Weather Phenomena</figcaption>
+                 <h4 class="modal-title">Weather Phenomena</h4>
             </div>
             <div class="modal-body">
                 <div id="carousel-Weather" class="carousel slide">
@@ -277,17 +277,17 @@ $(function() {
 <!--- END WEATHER MODAL -->
 
 <!--- START ANALYSES MODAL -->
-        <li> <a data-toggle="modal" href="#analyses" class="btn btn-primary btn-lg">
+         <a data-toggle="modal" href="#analyses" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Analyses</figcaption>
             <img src="pics/portfolio/analyses/analysesIcon.png" alt="analyses" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="analyses" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          </figure></a>
+        <div class="modal fade" id="analyses" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Analyses</figcaption>
+                 <h4 class="modal-title">Analyses</h4>
             </div>
             <div class="modal-body">
                 <div id="carousel-analyses" class="carousel slide">
@@ -335,17 +335,17 @@ $(function() {
       
 
 <!--- START Media Maps MODAL -->
-        <li> <a data-toggle="modal" href="#media" class="btn btn-primary btn-lg">
+        <a data-toggle="modal" href="#media" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Media Maps</figcaption>
             <img src="pics/portfolio/media/mediaicon.png" alt="media" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="media" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          </figure></a>
+        <div class="modal fade" id="media" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Media Maps</figcaption>
+                 <h4 class="modal-title">Media Maps</h4>
             </div>
             <div class="modal-body">
                 <div id="carousel-media" class=" carousel slide">
@@ -398,17 +398,17 @@ $(function() {
 
 
 <!--- START Personal Interests MODAL -->
-        <li> <a data-toggle="modal" href="#interests" class="btn btn-primary btn-lg">
+        <a data-toggle="modal" href="#interests" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Personal Interests</figcaption>
             <img src="pics/portfolio/interests/interestsicon.png" alt="interests" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="interests" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          </figure></a>
+        <div class="modal fade" id="interests" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Personal Interests</figcaption>
+                 <h4 class="modal-title">Personal Interests</h4>
             </div>
             <div class="modal-body">
                 <div id="carousel-interests" class=" carousel slide">
@@ -460,17 +460,17 @@ $(function() {
 
 
         <!--- START DIAGRAMS MODAL -->
-        <li> <a data-toggle="modal" href="#Diagrams" class="btn btn-primary btn-lg">
+        <a data-toggle="modal" href="#Diagrams" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Diagrams</figcaption>
             <img src="pics/portfolio/diagrams/diagramicon.png" alt="Diagrams" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="Diagrams" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          </figure></a>
+        <div class="modal fade" id="Diagrams" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Diagrams</figcaption>
+                 <h4 class="modal-title">Diagrams</h4>
             </div>
             <div class="modal-body">
                 <div id="carousel-Diagrams" class="carousel slide">
@@ -509,17 +509,17 @@ $(function() {
 <!--- END DIAGRAMS MODAL -->
 
         <!--- START MICROSCOPY MODAL -->
-        <li> <a data-toggle="modal" href="#Microscopy" class="btn btn-primary btn-lg">
+        <a data-toggle="modal" href="#Microscopy" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Microscopy</figcaption>
             <img src="pics/portfolio/microscopy/heartCells.png" alt="Microscopy" class="port">
-          </figure></a></li>
-        <div class="modal fade" id="Microscopy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          </figure></a>
+        <div class="modal fade" id="Microscopy" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                 <figcaption class="modal-title">Microscopy</figcaption>
+                 <h4 class="modal-title">Microscopy</h4>
             </div>
             <div class="modal-body">
                 <div id="carousel-Microscopy" class="carousel slide">
@@ -565,14 +565,16 @@ $(function() {
 <!--- END MICROSCOPY MODAL -->
       </div>
     </div>
-    <footer id="AContact">
+
+    <footer>
       <h6> Contact: </h6>
-      <div style="margin-right:5%; margin-left:5%; text-align:center">
+      <div id="AContact" style="margin-right:5%; margin-left:5%; text-align:center">
         <a href="mailto:rschweik1@gmail.com"><img class="icon highlight2" src="icons/mail.png" alt="mail icon"></a>
         <a target="_blank" href="https://twitter.com/rschweik1"><img class="icon highlight2" src="icons/twitter.png" alt="twitter icon"></a>
         <a target="_blank" href="https://www.rachelschweiker.wordpress.com"><img class="icon highlight2" src="icons/wordpress2.png" alt="wordpress icon"></a>
         <a target="_blank" href="https://www.linkedin.com/pub/rachel-schweiker/36/2a8/a32"><img class="icon highlight2" src="icons/linkedin.png" alt="linkedin icon"></a>
+      </div>
       <h6> Created by Rachel Schweiker, 2015 </h6>
-    </footer> 
-  </body>
+  </footer> 
+</body>
 </html>

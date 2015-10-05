@@ -196,6 +196,7 @@ h2 {
   h1{
     padding-bottom:20px;
     padding-top: 40px;
+    font-size: 70px;
   }
   h2{
     padding: 20px 0;
@@ -212,13 +213,21 @@ h3 {
 h4 {
 	color: #deefef;
 	font-size: 24px;
-	font-family: 'Lato', sans-serif; font-weight: 100;
+	font-family: 'Lato', sans-serif; font-weight: 300;
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-decoration: none;
 }
 figcaption {
+  color: #1b3455;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif; font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.match {
   color: #1b3455;
   font-size: 20px;
   font-family: 'Lato', sans-serif; font-weight: 300;
@@ -345,7 +354,7 @@ em {
 h6 {
 	color: #fff;
 	font-size: 15px;
-	font-family: 'Lato', sans-serif; font-weight: 100;
+	font-family: 'Lato', sans-serif; font-weight: 300;
 	line-height: 30px;
 	text-align: center;
 	padding:10px;
@@ -395,7 +404,7 @@ h6 {
   width:5%;
 }
 .icon{
-  margin: 10px;
+  margin: 5px;
   margin-top: 5px;
 }
 .carousel-control .icon-prev, 
