@@ -12,27 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,100|Lato:400,100,300|Oswald:400,300|Source+Sans+Pro:400,200,300|Lora|Raleway:400,100,200,300|Oxygen:400,300|Cabin|Fjalla+One|EB+Garamond'  type='text/css'/>
- <script>
-    $(document).on('click', 'a[href^="#A"]', function(e) {
-    // target element id
-    var id = $(this).attr('href');
-
-    // target element
-    var $id = $(id);
-    if ($id.length === 0) {
-        return;
-    }
-
-    // prevent standard hash navigation (avoid blinking in IE)
-    e.preventDefault();
-
-    // top position relative to the document
-    var pos = $(id).offset().top;
-
-    // animated top scrolling
-    $('body, html').animate({scrollTop: pos});
-});
-  </script>
   </head>
   <body>
   <!--<script>
@@ -571,10 +550,31 @@ $(function() {
       <div id="AContact" style="margin-right:5%; margin-left:5%; text-align:center">
         <a href="mailto:rschweik1@gmail.com"><img class="icon highlight2" src="icons/mail.png" alt="mail icon"></a>
         <a target="_blank" href="https://twitter.com/rschweik1"><img class="icon highlight2" src="icons/twitter.png" alt="twitter icon"></a>
-        <a target="_blank" href="https://www.rachelschweiker.wordpress.com"><img class="icon highlight2" src="icons/wordpress2.png" alt="wordpress icon"></a>
+        <a target="_blank" href="http://www.rachelschweiker.wordpress.com"><img class="icon highlight2" src="icons/wordpress2.png" alt="wordpress icon"></a>
         <a target="_blank" href="https://www.linkedin.com/pub/rachel-schweiker/36/2a8/a32"><img class="icon highlight2" src="icons/linkedin.png" alt="linkedin icon"></a>
       </div>
       <h6> Created by Rachel Schweiker, 2015 </h6>
   </footer> 
+   <script>
+    $(document).on('click', 'a[href^="#A"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    var pos = $(id).offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+});
+  </script>
 </body>
 </html>
