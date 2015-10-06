@@ -11,6 +11,7 @@
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jquery.mobile.custom.min.js"></script>  
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,100|Lato:400,100,300|Oswald:400,300|Source+Sans+Pro:400,200,300|Lora|Raleway:400,100,200,300|Oxygen:400,300|Cabin|Fjalla+One|EB+Garamond'  type='text/css'/>
   </head>
   <body>
@@ -45,7 +46,7 @@ $(function() {
         <h2> Scientist.<br> Researcher.<br> GIS Junkie.</h2>
       <div style="text-align:center">
         <a href="#About"> 
-          <img src="icons/arrow.png" alt="down arrow" id="arrow-btn" class="highlight">
+          <img src="icons/arrow.png" alt="down arrow" id="arrow-btn" class="highlight" height="70" width="70">
         </a>
       </div>
     </div>
@@ -70,7 +71,7 @@ $(function() {
         <a data-toggle="modal" href="#RecentWork" class="btn btn-primary btn-lg">
           <figure>
             <figcaption>Recent Work</figcaption>
-            <img src="pics/portfolio/recentWork/recentIcon.png" alt="Pronghorn Map" class="port">
+            <img src="pics/portfolio/recentWork/recentIcon.png" alt="Pronghorn Map" class="port" height="250" width="250">
           </figure></a>
                 <div class="modal fade" id="RecentWork" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
                     <div class="modal-dialog">
@@ -90,17 +91,17 @@ $(function() {
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <a><img src="pics/portfolio/recentWork/PronghornBeforeAndAfter.png" alt="Meteorologist Portal Design" /></a>
+                                            <a><img src="pics/portfolio/recentWork/PronghornBeforeAndAfter.png" alt="Meteorologist Portal Design" height="1090" width="600"/></a>
                                                  <h3>Pronghorn Range, before and after redesign</h3>
                                                 <p style="text-align:center">Made for FixWikiMaps as part of Maplift. Learned a lot about texturing maps - used Manually Shaded Relief from Natual Earth and bathymetry from Clean Topo 2. Also added shadows and highlights around certain layers.</p>
                                         </div>
                                         <div class="item">
-                                            <a><img src="pics/portfolio/recentWork/letterMapFramed.png" alt="Letter Map Framed" /></a>
+                                            <a><img src="pics/portfolio/recentWork/letterMapFramed.png" alt="Letter Map Framed" height="845" width="1000"/></a>
                                                  <h3>Antique Letter Map of the US</h3>
                                                 <p style="text-align:center">For fun.</p>
                                         </div>
                                         <div class="item">
-                                            <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" /></a>
+                                            <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" height="855" width="800"/></a>
                                                  <h3>Personal Website - You're Here!</h3>
                                                 <p style="text-align:center">Mockup in Inkscape, bootstrap as framework, custom HTML and CSS</p>
                                         </div>
@@ -148,17 +149,17 @@ $(function() {
                               <!-- Wrapper for slides -->
                               <div class="carousel-inner">
                                   <div class="item active">
-                                      <a><img src="pics/portfolio/designs/metPortal.png" alt="Meteorologist Portal Design" /></a>
+                                      <a><img src="pics/portfolio/designs/metPortal.png" alt="Meteorologist Portal Design" height="869" width="700"/></a>
                                            <h3>Meteorologist Portal Design</h3>
                                           <p style="text-align:center">Made in UXPin for Understory.</p>
                                   </div>
                                   <div class="item">
-                                      <a><img src="pics/portfolio/designs/googleMapsApi.png" alt="Google Maps API" /></a>
+                                      <a><img src="pics/portfolio/designs/googleMapsApi.png" alt="Google Maps API" height="869" width="700"/></a>
                                            <h3>Google Maps API Style</h3>
                                           <p style="text-align:center">Simplified Google Maps baselayer so weather data could be overlayed nicely.</p>
                                   </div>
                                   <div class="item">
-                                      <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" /></a>
+                                      <a><img src="pics/portfolio/designs/websiteMock.png" alt="website mockup" height="855" width="800"/></a>
                                            <h3>Personal Website - You're Here!</h3>
                                           <p style="text-align:center">Mockup in Inkscape, bootstrap as framework, custom HTML and CSS</p>
                                   </div>
@@ -553,7 +554,7 @@ $(function() {
         <a target="_blank" href="http://www.rachelschweiker.wordpress.com"><img class="icon highlight2" src="icons/wordpress2.png" alt="wordpress icon"></a>
         <a target="_blank" href="https://www.linkedin.com/pub/rachel-schweiker/36/2a8/a32"><img class="icon highlight2" src="icons/linkedin.png" alt="linkedin icon"></a>
       </div>
-      <h6> Created by Rachel Schweiker, 2015 </h6>
+      <h6> Copyright &copy; Rachel Schweiker, 2015 </h6>
   </footer> 
    <script>
     $(document).on('click', 'a[href^="#A"]', function(e) {
@@ -576,5 +577,15 @@ $(function() {
     $('body, html').animate({scrollTop: pos});
 });
   </script>
+  <script>  
+$(document).ready(function() {  
+   $("#myCarousel").swiperight(function() {  
+      $("#myCarousel").carousel('prev');  
+    });  
+   $("#myCarousel").swipeleft(function() {  
+      $("#myCarousel").carousel('next');  
+   });  
+});  
+</script>  
 </body>
 </html>
